@@ -1,0 +1,27 @@
+body {
+
+    background-color: $federal_blue;
+
+    .row {
+
+        display: flex;
+
+        flex-direction: row;
+
+    }
+
+    .col {
+
+        display: flex;
+
+        flex-direction: row;
+
+    }
+
+    .p {
+
+        /* color:lighten($sky_blue, 10%); */
+
+
+    }
+}
