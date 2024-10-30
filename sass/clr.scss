@@ -1,0 +1,20 @@
+@use 'var.scss' as var;
+
+body {
+
+    background-color: var.$federal_blue;
+
+}
+
+.section {
+
+    background-color: var.$persian_blue;
+
+}
+
+p, h1, h2, h3{
+
+    color:color.adjust($color:var.$sky_blue, $lightness: 0%);
+
+
+}
