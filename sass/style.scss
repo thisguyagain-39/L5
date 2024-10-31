@@ -2,4 +2,4 @@
 @use 'positioning.scss';
 @use 'clr.scss';
 @use 'fonts.scss';
-@use '1120.scss' as mquery; /* apparently you cant @use numbers */
+@use 'mquery.scss' as mquery;
