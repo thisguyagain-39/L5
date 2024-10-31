@@ -1,18 +1,70 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: $federal_blue;
- *   |                       ^^^^^^^^^^^^^
- *   '
- *   sass/positioning.scss 3:23  @use
- *   sass/style.scss 2:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $federal_blue;\a   \2502                        ^^^^^^^^^^^^^\a   \2575 \a   sass/positioning.scss 3:23  @use\a   sass/style.scss 2:1         root stylesheet";
+body {
+  /* this was actually really easy and went really well so either i'm actually getting better at css or sass is just That Cool */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+body .main {
+  margin: 0 5% 0 5%;
+}
+body .section {
+  margin: 5%;
+  padding: 5%;
+  border-radius: 16px;
+}
+body .row {
+  display: flex;
+  flex-direction: row;
+}
+body .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 0 2% 0 2%;
+}
+
+body {
+  background-color: #0e0e52;
+}
+
+.section {
+  background-color: rgb(87.5753424658, 103.1095890411, 233.4246575342);
+  /* this counts as colour right */
+  filter: drop-shadow(0 0 2rem rgb(87.5753424658, 103.1095890411, 233.4246575342));
+}
+
+p, h1, h2, h3 {
+  color: rgb(244.4277108434, 250.0662650602, 252.5722891566);
+}
+
+.footer {
+  background-color: rgb(87.5753424658, 103.1095890411, 233.4246575342);
+}
+
+/* this is definitely unneccesary but I'll be annoyed if i put the fonts into a file that isnt designated to be fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+p, a {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1120px) {
+  body {
+    padding: 8vw;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .col {
+    flex-basis: auto;
+  }
+}
+/* apparently you cant @use numbers */
+
+/*# sourceMappingURL=style.css.map */
